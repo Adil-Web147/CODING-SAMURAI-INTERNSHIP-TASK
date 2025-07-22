@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Environment variables
+.env
+frontend/.env
+backend/.env
+
+# Build outputs
+frontend/build/
+frontend/.next/
+backend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# System / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# OS specific
+desktop.ini
+
+# Ignore uploads folder
+uploads/
+# Ignore environment variables
+.env
+.env.local

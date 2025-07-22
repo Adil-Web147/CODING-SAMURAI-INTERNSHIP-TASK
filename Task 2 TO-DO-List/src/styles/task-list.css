@@ -1,0 +1,127 @@
+.task-list-card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  width: 100%;
+  min-height: 280px; 
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-list-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-list-title-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+}
+
+.no-tasks-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; 
+  text-align: center;
+  padding: 20px;
+}
+
+.no-tasks-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.no-tasks-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--text-muted);
+}
+
+.no-tasks-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0 0 5px 0;
+}
+
+.no-tasks-subtext {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.task-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .task-list-card {
+    padding: 20px;
+    min-height: 240px;
+  }
+  .task-list-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .no-tasks-icon-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+  .no-tasks-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .no-tasks-text {
+    font-size: 16px;
+  }
+  .no-tasks-subtext {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-list-card {
+    padding: 16px;
+    min-height: 200px;
+  }
+  .task-list-title {
+    font-size: 15px;
+  }
+  .no-tasks-icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+  .no-tasks-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .no-tasks-text {
+    font-size: 14px;
+  }
+  .no-tasks-subtext {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,143 @@
+:root {
+  /* Light Theme Colors */
+  --background-color-light: #f0f2f5;
+  --card-background-light: #ffffff;
+  --text-color-light: #333333;
+  --text-muted-light: #666666;
+  --border-color-light: #e0e0e0;
+  --primary-button-bg-light: #2563eb;
+  --primary-button-text-light: #ffffff;
+  --primary-button-hover-light: #1d4ed8;
+  --secondary-button-bg-light: #e0e7ff;
+  --secondary-button-text-light: #2563eb;
+  --secondary-button-hover-light: #c7d2fe;
+  --input-border-light: #d1d5db;
+  --input-focus-border-light: #2563eb;
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-hover-light: rgba(0, 0, 0, 0.1);
+  --card-shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+  /* Specific icon/status colors */
+  --icon-total-bg-light: #e0e7ff;
+  --icon-total-color-light: #2563eb;
+  --icon-completed-bg-light: #dcfce7;
+  --icon-completed-color-light: #22c55e;
+  --icon-pending-bg-light: #fffbeb; 
+  --icon-pending-color-light: #f97316;
+
+  /* Task item specific */
+  --task-item-bg-light: #f9fafb;
+  --task-item-border-light: #e5e7eb;
+  --task-item-completed-text-light: #9ca3af;
+  --task-item-completed-bg-light: #f3f4f6;
+  --task-item-action-hover-light: #f0f2f5;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Colors */
+  --background-color-dark: #1a202c;
+  --card-background-dark: #2d3748;
+  --text-color-dark: #e2e8f0;
+  --text-muted-dark: #a0aec0;
+  --border-color-dark: #4a5568;
+  --primary-button-bg-dark: #4299e1;
+  --primary-button-text-dark: #ffffff;
+  --primary-button-hover-dark: #3182ce;
+  --secondary-button-bg-dark: #2a4365;
+  --secondary-button-text-dark: #63b3ed;
+  --secondary-button-hover-dark: #2c5282;
+  --input-border-dark: #4a5568;
+  --input-focus-border-dark: #4299e1;
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-hover-dark: rgba(0, 0, 0, 0.4);
+  --card-shadow-dark: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+
+  /* Specific icon/status colors */
+  --icon-total-bg-dark: #2a4365;
+  --icon-total-color-dark: #63b3ed;
+  --icon-completed-bg-dark: #2f573e;
+  --icon-completed-color-dark: #48bb78;
+  --icon-pending-bg-dark: #634d2a;
+  --icon-pending-color-dark: #f6ad55;
+
+  /* Task item specific */
+  --task-item-bg-dark: #242d3b;
+  --task-item-border-dark: #3a4454;
+  --task-item-completed-text-dark: #718096;
+  --task-item-completed-bg-dark: #2c3748;
+  --task-item-action-hover-dark: #3a4454;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease;
+}
+
+/* Apply theme variables */
+html[data-theme="light"] {
+  --background-color: var(--background-color-light);
+  --card-background: var(--card-background-light);
+  --text-color: var(--text-color-light);
+  --text-muted: var(--text-muted-light);
+  --border-color: var(--border-color-light);
+  --primary-button-bg: var(--primary-button-bg-light);
+  --primary-button-text: var(--primary-button-text-light);
+  --primary-button-hover: var(--primary-button-hover-light);
+  --secondary-button-bg: var(--secondary-button-bg-light);
+  --secondary-button-text: var(--secondary-button-text-light);
+  --secondary-button-hover: var(--secondary-button-hover-light);
+  --input-border: var(--input-border-light);
+  --input-focus-border: var(--input-focus-border-light);
+  --shadow: var(--shadow-light);
+  --shadow-hover: var(--shadow-hover-light);
+  --card-shadow: var(--card-shadow-light);
+  --icon-total-bg: var(--icon-total-bg-light);
+  --icon-total-color: var(--icon-total-color-light);
+  --icon-completed-bg: var(--icon-completed-bg-light);
+  --icon-completed-color: var(--icon-completed-color-light);
+  --icon-pending-bg: var(--icon-pending-bg-light);
+  --icon-pending-color: var(--icon-pending-color-light);
+  --task-item-bg: var(--task-item-bg-light);
+  --task-item-border: var(--task-item-border-light);
+  --task-item-completed-text: var(--task-item-completed-text-light);
+  --task-item-completed-bg: var(--task-item-completed-bg-light);
+  --task-item-action-hover: var(--task-item-action-hover-light);
+}
+
+html[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --card-background: var(--card-background-dark);
+  --text-color: var(--text-color-dark);
+  --text-muted: var(--text-muted-dark);
+  --border-color: var(--border-color-dark);
+  --primary-button-bg: var(--primary-button-bg-dark);
+  --primary-button-text: var(--primary-button-text-dark);
+  --primary-button-hover: var(--primary-button-hover-dark);
+  --secondary-button-bg: var(--secondary-button-bg-dark);
+  --secondary-button-text: var(--secondary-button-text-dark);
+  --secondary-button-hover: var(--secondary-button-hover-dark);
+  --input-border: var(--input-border-dark);
+  --input-focus-border: var(--input-focus-border-dark);
+  --shadow: var(--shadow-dark);
+  --shadow-hover: var(--shadow-hover-dark);
+  --card-shadow: var(--card-shadow-dark);
+  --icon-total-bg: var(--icon-total-bg-dark);
+  --icon-total-color: var(--icon-total-color-dark);
+  --icon-completed-bg: var(--icon-completed-bg-dark);
+  --icon-completed-color: var(--icon-completed-color-dark);
+  --icon-pending-bg: var(--icon-pending-bg-dark);
+  --icon-pending-color: var(--icon-pending-color-dark);
+  --task-item-bg: var(--task-item-bg-dark);
+  --task-item-border: var(--task-item-border-dark);
+  --task-item-completed-text: var(--task-item-completed-text-dark);
+  --task-item-completed-bg: var(--task-item-completed-bg-dark);
+  --task-item-action-hover: var(--task-item-action-hover-dark);
+}

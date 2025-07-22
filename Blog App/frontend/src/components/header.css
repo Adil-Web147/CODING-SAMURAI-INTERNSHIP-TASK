@@ -1,0 +1,210 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+.header-app-logo-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: -4px;
+  color: #2563eb;
+}
+
+.header-menu-icon {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.header-nav {
+  display: none;
+  align-items: center;
+  gap: 24px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.header-nav-link {
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.header-nav-link:hover {
+  color: #1f2937;
+}
+
+.header-new-post-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header-new-post-button:hover {
+  background-color: #1d4ed8;
+}
+
+.header-new-post-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.header-auth-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: transparent;
+  color: #4b5563;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.header-auth-button:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.header-auth-button.logout-button {
+  background-color: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+.header-auth-button.logout-button:hover {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.header-auth-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+  z-index: 10;
+}
+
+.mobile-menu-link {
+  color: #1f2937;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-menu-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-new-post-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.mobile-new-post-button:hover {
+  background-color: #1d4ed8;
+}
+
+.mobile-auth-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: transparent;
+  color: #1f2937;
+  padding: 8px 0;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  justify-content: flex-start;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.mobile-auth-button:last-of-type {
+  border-bottom: none;
+}
+
+.mobile-auth-button:hover {
+  color: #2563eb;
+}
+
+.mobile-auth-button.logout-button {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-top: 8px;
+  border: none;
+}
+
+.mobile-auth-button.logout-button:hover {
+  background-color: #dc2626;
+}
+
+@media (min-width: 768px) {
+  .header-menu-icon {
+    display: none;
+  }
+  .header-nav {
+    display: flex;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}

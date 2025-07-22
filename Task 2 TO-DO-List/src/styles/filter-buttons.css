@@ -1,0 +1,73 @@
+.filter-buttons-card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--card-shadow);
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-button {
+  flex: 1;
+  background-color: transparent;
+  color: var(--text-muted);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: var(--secondary-button-hover);
+}
+
+.filter-button.active {
+  background-color: var(--primary-button-bg);
+  color: var(--primary-button-text);
+}
+
+.filter-button.active:hover {
+  background-color: var(--primary-button-hover);
+}
+
+.filter-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-buttons-card {
+    padding: 10px;
+    gap: 6px;
+  }
+  .filter-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .filter-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-buttons-card {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+  }
+  .filter-button {
+    width: 100%;
+  }
+}
